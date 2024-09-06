@@ -1,0 +1,149 @@
+.esquerdinha {
+    position: absolute;
+    float: left;
+    margin-left: 100px;
+}
+.direitinha {
+    float: right;
+    margin-right: 100px;
+}
+.direcao{
+  float: left;
+  margin-left: 100px;
+  padding-top: 450px;
+}
+.ordem{
+  float: left;
+  margin-left: 100px;
+  padding-top: 50px;
+}
+.flex-start {
+  justify-content: flex-start;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+.center {
+  justify-content: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+.container {
+  width: 420px;
+  margin: 0 auto;
+  display: flex;
+  border: 1px solid #ccc;
+}
+.item {
+  margin: 5px;
+  padding: 0 10px;
+  background: red;
+  text-align: center;
+  font-size: 1.5em;
+}
+h1 {
+  text-align: center;
+  margin: 20px 0 0 0;
+  font-size: 1.25em;
+  font-weight: normal;
+}
+
+
+.streach {
+  align-items: stretch;
+}
+
+
+.flex-start {
+  align-items: flex-start;
+}
+
+.flex-end {
+  align-items: flex-end;
+}
+
+.center {
+  align-items: center;
+}
+
+.baseline {
+  align-items: baseline;
+}
+
+.direitinha .item:first-child {
+  padding-top: 20px;
+}
+
+.direitinha .alinhamento-central {
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+}
+
+.direitinha .alinhamento-central .item {
+  flex: 0;
+  padding: 10px;
+}
+
+.direitinha  .item {
+  background: blue;
+}
+.column {
+  flex-direction: column;
+}
+.direitinha .item{
+  flex: 1;
+}
+.direcao .item{
+  background-color: orange;
+  flex: 1;
+}
+.direcao .row{
+  flex-direction: row;
+}
+.direcao .row-reverse {
+  flex-direction: row-reverse;
+}
+.direcao .column {
+  flex-direction: column;
+}
+.direcao .column-reverse {
+  flex-direction: column-reverse;
+}
+.ordem .item{
+  background-color: cyan;
+  margin: 5px;
+  padding: 0 5px;
+  text-align: center;
+  font-size: 1.5em;
+}
+.ordem .orer1{
+  order: 1;
+}
+
+.ordem .order2 {
+  order: 2;
+}
+
+.ordem .order3 {
+  order: 3;
+}
+
+.ordem .order4 {
+  order: 4;
+}
+
+.ordem .order-1 {
+  order: -1;
+}
+
+.ordem .flex-grow {
+  flex-grow: 1;
+}

@@ -7,83 +7,154 @@
     <title>POC 01 - FLEXBox</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="nav-wrapper">
-                <a href="#">
-                    <h1>POC 01</h1>
-                </a>
-                <div class="nav-items">
-                    <div class="main-items">
-                        <ul>
-                            <li>
-                                <a href="./index.html" class="ativo">FlexBox</a>
-                            </li>
-                            <li>
-                                <a href="#">POC 02</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <section id="aula">
-        <div class="main-content-wrapper">
-            <p>Entenda FlexBox</p>
-        </div>
-    </section>
-    <main>
-        <section class="fxb" id="fbx">
-            <h2>O que é Flexbox</h2>
-            <div class="texto"><p>O Flexbox é um módulo de layout que oferece uma maneira mais eficiente de organizar, alinhar e distribuir espaço entre os itens dentro de um contêiner. Ele foi projetado para ser flexível, permitindo que os itens se ajustem automaticamente, seja expandindo para preencher o espaço disponível ou encolhendo para evitar transbordamentos, mesmo quando o tamanho dos itens é desconhecido ou dinâmico.
-			A principal vantagem do Flexbox é a sua capacidade de adaptar os itens do contêiner para ocupar o espaço disponível de forma otimizada, considerando diferentes dispositivos e tamanhos de tela. Diferente dos layouts tradicionais, como o layout em bloco (vertical) e o layout em linha (horizontal), o Flexbox é agnóstico à direção, o que significa que ele pode organizar os itens em qualquer direção, tornando-o ideal para componentes de uma aplicação e layouts de pequena escala, onde é necessário lidar com mudanças de orientação, redimensionamento e outras dinâmicas.
-			</p></div>
-			<h2>Noções básicas e termologia</h2>
-			<div class="texto"><p>O Flexbox é um módulo abrangente que consiste em várias propriedades, não se limitando a apenas uma. Algumas dessas propriedades são aplicadas diretamente ao contêiner (o elemento pai, conhecido como flex container), enquanto outras são definidas nos elementos filhos, chamados de flex items.
-			Enquanto o layout tradicional utiliza as direções block e inline, o layout Flex é orientado pelas direções "flex flow". O diagrama da especificação a seguir ilustra a ideia central do layout Flex, mostrando como ele organiza e distribui os elementos dentro do contêiner de maneira flexível e adaptável.
-			</p></div>
-            <div class="texto">
-            <p>Os ítens serão dispostos no leiaute seguindo ou o eixo principal ou o transversal.</p>
-			<ul>
-				<li>⦁	Eixo principal: o eixo principal de um flex container é o eixo primário e ao longo dele são inseridos os flex items. Cuidado: O eixo principal não é necessariamente horizontal; vai depender da propriedade flex-direction(veja abaixo).</li>
-				<li>⦁	main-start | main-end: os flex items são inseridos dentro do container começando pelo lado start, indo em direção ao lado end.</li>
-				<li>⦁	Tamanho principal: A largura ou altura de um flex item, dependendo da direção do container, é o tamanho principal do ítem. A propriedade de tamanho principal de um flex item pode ser tanto width quanto height, dependendo de qual delas estiver na direção principal.</li>
-				<li>⦁	Eixo transversal: O eixo perpendicular ao eixo principal é chamado de eixo transversal. Sua direção depende da direção do eixo principal.</li>
-				<li>⦁	cross-start | cross-end: Linhas flex são preenchidas com ítens e adicionadas ao container, começando pelo lado cross start do flex container em direção ao lado cross end.</li>
-				<li>⦁	cross size: A largura ou altura de um flex item, dependendo do que estiver na dimensão transversal, é o cross size do íten. A propriedade cross size pode ser tanto a largura quanto a altura do ítem, o que estiver na transversal.</li>
-			</ul>
-			</div>
-			<div class="imagem"><img src="../ASSETS/adapt.png"></div>
-			<h2>ELEMENTOS PAIS</h2>
-            <div class="texto"><p>...
-			</p></div>
-			<h2>ELEMENTOS FILHOS</h2>
-            <div class="texto"><p>...
-			</p></div>
-        </section>
-    </main>
-    <section id="sobre"><div class="sob">
-    	<h3>Sobre</h3>
-    	<p>As informações desta página foram baseadas nos seguintes recursos:</p>
-			<ul>
-				<li><a href="">CSS-Tricks: A Guide to Flexbox</a></li>
-				<li><a href="">Alura: Guia do Flexbox</a></li>
-			</ul>
-		<p>Você pode encontrar informações adicionais e detalhes nos links acima.
-		</p>
-		<h3>Sugestões de Leitura</h3>
-    	<p>APara aprofundar seu conhecimento, recomendamos:</p>
-    	<ul>
-			<li><a href="">W3Schools: Flexbox</a></li>
-			<li><a href="">Origamid:Flexbox - Guia Completo</a></li>	
-		</ul>
-		<h3>Para Praticar</h3>
-		<ul>
-			<li><a href="">Flexbox Froggy</a></li>
-			<li><a href="">Flexbox Adventure<?</li>	
-		</ul>
-    	</div>
-    </section>
+	<div class="esquerdinha">
+    <h1>justify-content: flex-start</h1>
+<section class="container flex-start">
+	<div class="item">1</div>
+	<div class="item">2</div>
+	<div class="item">3</div>
+	<div class="item">4</div>
+</section>
+
+<h1>justify-content: flex-end</h1>
+<section class="container flex-end">
+	<div class="item">1</div>
+	<div class="item">2</div>
+	<div class="item">3</div>
+	<div class="item">4</div>
+</section>
+
+<h1>justify-content: center</h1>
+<section class="container center">
+	<div class="item">1</div>
+	<div class="item">2</div>
+	<div class="item">3</div>
+	<div class="item">4</div>
+</section>
+
+<h1>justify-content: space-between</h1>
+<section class="container space-between">
+	<div class="item">1</div>
+	<div class="item">2</div>
+	<div class="item">3</div>
+	<div class="item">4</div>
+</section>
+
+<h1>justify-content: space-around</h1>
+<section class="container space-around">
+	<div class="item">1</div>
+	<div class="item">2</div>
+	<div class="item">3</div>
+	<div class="item">4</div>
+</section>
+</div>
+<div class="direitinha">
+<h1>align-items: stretch</h1>
+<section class="container stretch">
+	<div class="item">1</div>
+	<div class="item">lorem 2 ## lorem</div>
+	<div class="item">lorem 3 ## lorem lorem ##</div>
+	<div class="item">lorem 4</div>
+</section>
+
+<h1>align-items: flex-start</h1>
+<section class="container flex-start">
+	<div class="item">1</div>
+	<div class="item">lorem 2 ## lorem</div>
+	<div class="item">lorem 3 ## lorem lorem ##</div>
+	<div class="item">lorem 4</div>
+</section>
+
+<h1>align-items: flex-end</h1>
+<section class="container flex-end">
+	<div class="item">1</div>
+	<div class="item">lorem 2 ## lorem</div>
+	<div class="item">lorem 3 ## lorem lorem ##</div>
+	<div class="item">lorem 4</div>
+</section>
+
+<h1>align-items: center</h1>
+<section class="container center">
+	<div class="item">1</div>
+	<div class="item">lorem 2 ## lorem</div>
+	<div class="item">lorem 3 ## lorem lorem ##</div>
+	<div class="item">lorem 4</div>
+</section>
+
+<h1>align-items: baseline</h1>
+<section class="container baseline">
+	<div class="item">1</div>
+	<div class="item">lorem 2 ## lorem</div>
+	<div class="item">lorem 3 ## lorem lorem ##</div>
+	<div class="item">lorem 4</div>
+</section>
+</div>
+
+
+
+<div class="direcao">
+	<h1>flex-direction: row</h1>
+<section class="container row">
+	<div class="item">1</div>
+	<div class="item">2</div>
+	<div class="item">3</div>
+</section>
+
+<h1>flex-direction: row-reverse</h1>
+<section class="container row-reverse">
+	<div class="item">1</div>
+	<div class="item">2</div>
+	<div class="item">3</div>
+</section>
+
+<h1>flex-direction: column</h1>
+<section class="container column">
+	<div class="item">1</div>
+	<div class="item">2</div>
+	<div class="item">3</div>
+</section>
+
+<h1>flex-direction: column-reverse</h1>
+<section class="container column-reverse">
+	<div class="item">1</div>
+	<div class="item">2</div>
+	<div class="item">3</div>
+</section>
+</div>
+
+
+<div class="ordem">
+	<h1>order misturados</h1>
+<section class="container">
+	<div class="item order2">1</div>
+	<div class="item order4">2</div>
+	<div class="item order1">3</div>
+	<div class="item order3">4</div>
+</section>
+
+<h1>order: negativo / flex-grow</h1>
+<section class="container">
+	<div class="item order2 flex-grow">1</div>
+	<div class="item order-1 flex-grow">2</div>
+	<div class="item order1 flex-grow">3</div>
+	<div class="item order3 flex-grow">4</div>
+</section>
+
+<h1>order: valores iguais / grow / column</h1>
+<section class="container column">
+	<div class="item order2 flex-grow">1</div>
+	<div class="item order2 flex-grow">2</div>
+	<div class="item order1 flex-grow">3</div>
+	<div class="item order1 flex-grow">4</div>
+</section>
+
+<h1>order: valores iguais / grow / column</h1>
+<section class="container column">
+	<div class="item flex-grow">1</div>
+	<div class="item order2 flex-grow">2</div>
+	<div class="item flex-grow">3</div>
+	<div class="item order-1 flex-grow">4</div>
+</section>
+</div>
 </body>
 </html>
