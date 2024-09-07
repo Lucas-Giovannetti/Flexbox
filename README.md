@@ -24,6 +24,7 @@ Enquanto o layout tradicional utiliza as direções block e inline, o layout Fle
 Define o flex conteiner; em linha ou em bloco dependendo dos valores passados. Colacando os elementos filhos em um contexto flex.
 ### justify-content:
 Esta propriedade define o alinhamento dos ítens ao longo do eixo principal. Ajuda a distribuir o espaço livre que sobrar no container tanto se todos os flex items em uma linha são inflexíveis, ou são flexíveis mas já atingiram seu tamanho máximo. Também exerce algum controle sobre o alinhamento de ítens quando eles ultrapassam o limite da linha.
+![image](https://github.com/user-attachments/assets/865f312f-9d4b-4903-b288-2b05464f4945)
 * flex-start (padrão): os ítens são alinhados junto à borda de início (start) de acordo com qual for a flex-direction do container.
 * flex-end: os ítens são alinhados junto à borda final (end) de acordo com qual for a flex-direction do container.
 * center: os ítens são centralizados na linha.
@@ -31,24 +32,34 @@ Esta propriedade define o alinhamento dos ítens ao longo do eixo principal. Aju
 * space-around: os ítens são distribuídos na linha com o mesmo espaçamento entre eles. Note que, visualmente, o espaço pode não ser igual, uma vez que todos os ítens tem a mesma quantidade de espaço dos dois lados: o primeiro item vai ter somente uma unidade de espaço junto à borda do container, mas duas unidades de espaço entre ele e o próximo ítem, pois o próximo ítem também tem seu próprio espaçamento que está sendo aplicado.
 ### flex-direction:
 Estabelece o eixo principal, definindo assim a direção em que os flex items são alinhados no flex container. O Flexbox é (com exceção de um wrapping opcional) um conceito de leiaute de uma só direção. Pense nos flex items inicialmente posicionais ou em linhas horizontais ou em colunas verticais.
+
+![image](https://github.com/user-attachments/assets/2aa7d2af-994e-4b1e-9e2d-dc2b3b02ec60)
 * row (padrão): esquerda para a direita em ltr (left to right), direita para a esquerda em rtl (right to left)
 * row-reverse: direita para a esquerda em ltr, esquerda para a direita em rtl
 * column: mesmo que row, mas de cima para baixo
 * column-reverse: mesmo que row-reverse mas de baixo para cima
 ### flex-wrap:
 Por padrão, os flex items vão todos tentar se encaixar em uma só linha. Com esta propriedade você pode modificar esse comportamento e permitir que os ítens quebrem para uma linha seguinte conforme for necessário.
+![image](https://github.com/user-attachments/assets/69fc92c3-26a7-436a-82f0-ae6f5bcd8495)
+
 * nowrap (padrão): todos os flex items ficarão em uma só linha
 * wrap: os flex items vão quebrar em múltiplas linhas, de cima para baixo
 * wrap-reverse: os flex items vão quebrar em múltiplas linhas de baixo para cima
 ### flex-flow:
 A propriedade flex-flow é uma propriedade shorthand (uma mesma declaração inclui vários valores relacionados a mais de uma propriedade) que inclui flex-direction e flex-wrap. Determina quais serão os eixos pricipal e transversal do container. O valor padrão é row nowrap.
+![image](https://github.com/user-attachments/assets/2d00eee6-08b6-442b-bbd1-5868d84bb7ab)
+
 ### align-items:
 * stretch (padrão): estica os ítens para preencher o container, respeitando o min-width/max-width).
 * flex-start/ start / self-start: ítens são posicionados no início do eixo transversal. A diferença entre eles é sutil e diz respeito às regras de flex-direction ou writing-mode.
 * center: ítens são centralizados no eixo transversal.
 * baseline: ítens são alinhados de acordo com suas baselines.
+![image](https://github.com/user-attachments/assets/5b09e20f-d5c1-4104-846e-71c319c6694f)
+
 ### align-content:
 Organiza as linhas dentro de um flex container quando há espaço extra no eixo transversal, similar ao modo como justify-content alinha ítens individuais dentro do eixo principal. Esta propriedade não tem efeito quando há somente uma linha de flex items no container.
+![image](https://github.com/user-attachments/assets/0b87b315-2785-4d4c-9164-281274aaa55c)
+
 * flex-start / start: ítens alinhados com o início do container. O valor (com maior suporte dos navegadores) flex-start se guia pela flex-direction, enquanto start se guia pela direção do writing-mode.
 * flex-end / end: ítens alinhados com o final do container. O valor (com maior suporte dos navegadores) flex-end se guia pela flex-direction, enquanto end se guia pela direção do writing-mode.
 * center: ítens centralizados no container.
@@ -63,5 +74,9 @@ Esta é a propriedade shorthand para flex-grow, flex-shrink e flex-basis, combin
 ### order:
 Determina a ordem em que os elementos aparecerão.
 Por padrão os flex items são dispostos na tela na ordem do código. Mas a propriedade order controla a ordem em que aparecerão no container.
+![image](https://github.com/user-attachments/assets/fd04fdaf-598e-486d-9d56-f2e4ed2e9336)
+
 ### align-self:
 Permite que o alinhamento padrão (ou o que estiver definido por align-items) seja sobrescrito para ítens individuais. Veja a propriedade align-items para entender quais são os possíveis valores.
+![image](https://github.com/user-attachments/assets/b2f7190a-357d-4dba-9fe1-f8962087dcd3)
+
