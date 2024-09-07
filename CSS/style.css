@@ -17,10 +17,19 @@
   margin-left: 100px;
   padding-top: 50px;
 }
+.prop{
+  float: right;
+    margin-right: 100px;
+    margin-top: 50px;
+}
 .flex-start {
   justify-content: flex-start;
 }
-
+.warp{
+  float: left;
+  margin-left: 100px;
+  padding-top: 50px;
+}
 .flex-end {
   justify-content: flex-end;
 }
@@ -146,4 +155,106 @@ h1 {
 
 .ordem .flex-grow {
   flex-grow: 1;
+}
+
+.prop .flex-start {
+  align-self: flex-start;
+}
+
+.prop .flex-end {
+  align-self: flex-end;
+}
+
+.prop .center {
+  align-self: center;
+}
+
+.prop .baseline {
+  align-self: baseline;
+}
+
+.prop .stretch {
+  align-self: stretch;
+}
+
+.prop .align-items {
+  align-items: flex-end;
+}
+
+.prop .item {
+  flex: 1;
+  background-color: pink;
+}
+
+.prop .item:first-child {
+  padding-top: 20px;
+}
+
+.warp .item{
+  flex: 1;
+  background-color: green;
+}
+.nowrap {
+  flex-wrap: nowrap;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+.tresk{
+  float: left;
+  margin-left: 100px;
+  padding-top: 50px;
+}
+.tresk .item{
+  flex: 1;
+  background-color: purple;
+}
+.tresk .row-nowrap {
+  flex-flow: row nowrap;
+}
+.tresk .column-nowrap {
+  flex-flow: column nowrap;
+}
+.tresk .row-wrap {
+  flex-flow: row wrap;
+}
+.aLinhaContente{
+  float: left;
+  margin-left: 5px;
+  padding-top: 50px;
+}
+.aLinhaContente .item{
+  flex: 1;
+  background-color: sandybrown;
+}
+.aLinhaContente .stretch {
+  align-content: stretch;
+}
+
+.aLinhaContente .flex-start {
+  align-content: flex-start;
+}
+
+.aLinhaContente .flex-end {
+  align-content: flex-end;
+}
+
+.aLinhaContente .center {
+  align-content: center;
+}
+
+.aLinhaContente .space-between {
+  align-content: space-between;
+}
+
+.aLinhaContente .space-around {
+  align-content: space-around;
+}
+.aLinhaContente .container {
+  max-width: 420px;
+  height: 300px;
+  flex-wrap: wrap;
 }
